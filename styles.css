@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.month {
+    display: grid;
+    grid-template-columns: repeat(7, 100px); 
+    gap: 10px; 
+    justify-content: center;
+}
+
+.day {
+    color: #00d9ff;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(218, 235, 249);
+    border-radius: 10px;
+}
+.emptyDay {
+    color: #496f76;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(174, 188, 199);
+    border-radius: 10px;
+}
+
+@media screen and (min-height: 700px) {
+    .month {
+        gap: 5px; 
+    }
+}
